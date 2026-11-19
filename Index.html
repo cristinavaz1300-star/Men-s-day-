@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For You ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 25px 15px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3b0b19, #741f35, #4b101f);
+  font-family: 'Playfair Display', serif;
+  color: #f6e9d9;
+  text-align: center;
+}
+
+.container {
+  max-width: 450px;
+  margin: 35px auto;
+}
+
+.card {
+  background: #f5e9d8;
+  color: #511526;
+  padding: 35px 25px;
+  border-radius: 22px;
+  border: 1px solid #d9b99b;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+  margin-bottom: 25px;
+}
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+  color: #741f35;
+}
+
+h1 {
+  font-size: 53px;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 29px;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.script {
+  font-family: 'Dancing Script', cursive;
+  font-size: 26px;
+}
+
+.heart {
+  font-size: 35px;
+  color: #a33a53;
+}
+
+button {
+  background: #741f35;
+  color: #fff1e2;
+  border: none;
+  padding: 14px 25px;
+  border-radius: 30px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #3b0b19;
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+#letter {
+  animation: appear 1s ease;
+}
+
+#kissSurprise {
+  animation: appear 1s ease;
+  margin-top: 20px;
+}
+
+.divider {
+  color: #a66b78;
+  font-size: 23px;
+  margin: 20px 0;
+}
+
+.footer {
+  font-family: 'Dancing Script', cursive;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.small {
+  font-size: 13px;
+  color: #966a70;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- FIRST PAGE -->
+
+  <div class="card">
+
+    <div class="heart">♡</div>
+
+    <h1>Happy Men's Day</h1>
+
+    <p class="script">
+      To my favourite person...
+    </p>
+
+    <div class="divider">✧ ♡ ✧</div>
+
+    <p>
+      Today is a little reminder that
+      you are special, appreciated
+      and loved more than you know.
+    </p>
+
+    <p class="script">
+      This little website is just for you. ♡
+    </p>
+
+    <button onclick="document.getElementById('letter').classList.remove('hidden'); this.style.display='none';">
+      Open your letter 💌
+    </button>
+
+  </div>
+
+
+  <!-- LOVE LETTER -->
+
+  <div id="letter" class="card hidden">
+
+    <h2>A little letter for you</h2>
+
+    <div class="divider">♡</div>
+
+    <p>
+      I don't always say everything I feel,
+      but I hope you know how much you mean
+      to me.
+    </p>
+
+    <p>
+      I'm proud of you, your efforts,
+      your dreams and the person you're
+      becoming.
+    </p>
+
+    <p>
+      Life won't always be easy,
+      but I hope you never forget
+      how capable and special you are.
+    </p>
+
+    <p>
+      Keep smiling, keep growing
+      and never stop being yourself.
+    </p>
+
+    <p class="script">
+      I'm really glad you're in my life. ♡
+    </p>
+
+    <div class="divider">✧ ✧ ✧</div>
+
+    <h3>One more thing...</h3>
+
+    <p>
+      You deserve all the happiness
+      in this world.
+    </p>
+
+    <button onclick="document.getElementById('kissSurprise').classList.remove('hidden'); this.style.display='none';">
+      Your last surprise 🎁
+    </button>
+
+  </div>
+
+
+  <!-- SECRET KISS GIFT -->
+
+  <div id="kissSurprise" class="card hidden">
+
+    <div class="heart">♡</div>
+
+    <h1>Muahhh!</h1>
+
+    <p class="script">
+      A little gift, just for you...
+    </p>
+
+    <div style="font-size:45px; margin:20px 0;">
+      💋 💋 💋
+    </div>
+
+    <h2>Sending you little kisses!</h2>
+
+    <p>
+      One for your forehead,
+      one for your cheeks
+      and a million more just because. ♡
+    </p>
+
+    <div class="divider">♡ ✧ ♡</div>
+
+    <p class="script">
+      Happy Men's Day, my favourite human.
+    </p>
+
+    <p style="font-size:35px;">💋❤️</p>
+
+    <div class="footer">
+      With love, always ♡
+    </div>
+
+  </div>
+
+  <p class="small">
+    Made with love, just for you.
+  </p>
+
+</div>
+
+</body>
+</html>
